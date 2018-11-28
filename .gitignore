@@ -1,0 +1,13 @@
+build
+.gradle
+.idea
+target/**
+*.ipr
+*.iws
+*.iml
+out
+*.rdb
+.DS_Store
+*.log
+*.txt
+*.gpg
