@@ -13,6 +13,7 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.support.destination.DynamicDestinationResolver;
 import org.springframework.messaging.MessageChannel;
+import org.springframework.messaging.SubscribableChannel;
 
 import javax.jms.Session;
 
@@ -43,7 +44,7 @@ public class JMSConfig {
 
     @Bean
     @Primary
-    public MessageChannel getMyMessageChannel( ){
+    public SubscribableChannel getMyMessageChannel( ){
         return new PublishSubscribeChannel( );
     }
 
